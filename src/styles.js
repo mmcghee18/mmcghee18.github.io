@@ -1,8 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { animated } from "react-spring";
-import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
-import { Github } from "@styled-icons/boxicons-logos/Github";
-import { Email } from "@styled-icons/material-outlined/Email";
+import { LinkedinSquare } from "@styled-icons/boxicons-logos";
+import { Github } from "@styled-icons/boxicons-logos";
+import { Email } from "@styled-icons/material-outlined";
 
 // App
 export const GlobalStyle = createGlobalStyle`
