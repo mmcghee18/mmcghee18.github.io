@@ -4,33 +4,75 @@ import Project from "./Project.jsx";
 import projects from "./projects.js";
 
 const Projects = ({ projectType }) => {
-  console.log({ projectType });
+  let projectsToDisplay = [];
+  if (projectType === null) projectsToDisplay = projects;
+  else {
+    projectsToDisplay = projects.filter((project) =>
+      project.tag.includes(projectType)
+    );
+  }
+
+  if (projectType === "code") {
+    const justCode = projectsToDisplay.filter(
+      (project) => project.tag === "code"
+    );
+    const dataVis = projectsToDisplay.filter((project) =>
+      project.tag.includes("data-vis")
+    );
+
+    return (
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <h2 style={{ marginBottom: 0 }}>
+          <strong>Data Vis</strong>
+        </h2>
+        <ProjectsWrapper>
+          {dataVis.map(({ title, description, image, tag, link }) => {
+            if (tag.includes("data-vis")) {
+              return (
+                <Project
+                  title={title}
+                  description={description}
+                  image={image}
+                  tag={tag}
+                  link={link}
+                />
+              );
+            }
+          })}
+        </ProjectsWrapper>
+        <h2 style={{ marginBottom: 0 }}>
+          <strong>Software Engineering</strong>
+        </h2>
+        <ProjectsWrapper>
+          {justCode.map(({ title, description, image, tag, link }) => {
+            if (tag.includes("code") && !tag.includes("data-vis")) {
+              return (
+                <Project
+                  title={title}
+                  description={description}
+                  image={image}
+                  tag={tag}
+                  link={link}
+                />
+              );
+            }
+          })}
+        </ProjectsWrapper>
+      </div>
+    );
+  }
+
   return (
     <ProjectsWrapper>
-      {projects.map(({ title, description, image, tag, link }) => {
-        if (projectType === null) {
-          return (
-            <Project
-              title={title}
-              description={description}
-              image={image}
-              tag={tag}
-              link={link}
-            />
-          );
-        }
-        if (tag.includes(projectType)) {
-          return (
-            <Project
-              title={title}
-              description={description}
-              image={image}
-              tag={tag}
-              link={link}
-            />
-          );
-        }
-      })}
+      {projectsToDisplay.map(({ title, description, image, tag, link }) => (
+        <Project
+          title={title}
+          description={description}
+          image={image}
+          tag={tag}
+          link={link}
+        />
+      ))}
     </ProjectsWrapper>
   );
 };

@@ -22,34 +22,12 @@ const Project = ({ title, description, image = laptops, link = "#" }) => {
   return (
     <ProjectWrapper>
       <h4>{title}</h4>
-      <ImageWrapper onClick={() => set((state) => !state)}>
-        <div style={{ position: "relative" }}>
-          <FlippingImage
-            src={image}
-            style={{
-              opacity: opacity.interpolate((o) => 1 - o),
-              transform,
-            }}
-          />
-          <FlippingDescription
-            style={{
-              opacity,
-              transform: transform.interpolate((t) => `${t} rotateX(180deg)`),
-            }}
-          >
-            <Description>{description}</Description>
-          </FlippingDescription>
-        </div>
-        {/* This is here so ImageWrapper has height */}
-        <Image src={image} style={{ opacity: 0 }} />
+      <ImageWrapper>
+        <a href={link} target="_blank">
+          <Image src={image} />
+        </a>
       </ImageWrapper>
-      <a
-        href={link}
-        target="_blank"
-        style={{ textDecoration: "underline", marginTop: "10px" }}
-      >
-        See it >>
-      </a>
+      <Description>{description}</Description>
     </ProjectWrapper>
   );
 };

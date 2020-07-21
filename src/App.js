@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Projects from "./Projects/Projects.jsx";
+import About from "./About/About.jsx";
 import Sidebar from "./Sidebar/Sidebar.jsx";
 import GlobalFonts from "./fonts/fonts.js";
 import { GlobalStyle, AppWrapper } from "./styles.js";
@@ -11,7 +12,11 @@ function App() {
       <GlobalStyle />
       <GlobalFonts />
       <Sidebar setProjectType={setProjectType} />
-      <Projects projectType={projectType} />
+      {projectType === "about" ? (
+        <About />
+      ) : (
+        <Projects projectType={projectType} />
+      )}
     </AppWrapper>
   );
 }

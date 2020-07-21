@@ -4,7 +4,9 @@ import { SidebarWrapper, Link, ProjectTypes } from "../styles.js";
 const Sidebar = ({ setProjectType }) => {
   return (
     <SidebarWrapper>
-      <h3>Michelle McGhee</h3>
+      <h3>
+        <strong>Michelle McGhee</strong>
+      </h3>
 
       <ProjectTypes>
         <Link href="#" onClick={() => setProjectType(null)}>

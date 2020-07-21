@@ -1,5 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { animated } from "react-spring";
+import { LinkedinSquare } from "@styled-icons/boxicons-logos/LinkedinSquare";
+import { Github } from "@styled-icons/boxicons-logos/Github";
+import { Email } from "@styled-icons/material-outlined/Email";
 
 // App
 export const GlobalStyle = createGlobalStyle`
@@ -9,9 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     color: black;
   }
 
+  strong {
+    font-family: 'National 2 Web Bold';
+  }
+
   a {
-    text-decoration: none;
-    color: inherit;
+    color: #50a8e6;
 
     :hover {
       color: #50a8e6;
@@ -45,6 +51,7 @@ export const ProjectLink = styled.a`
 
 export const Description = styled.div`
   color: grey;
+  margin-top: 1em;
 `;
 
 export const FlippingImage = styled(animated.img)`
@@ -92,4 +99,36 @@ export const ProjectTypes = styled.div`
 export const Link = styled.a`
   font-size: 0.85em;
   margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+`;
+
+// About
+export const AboutWrapper = styled.div`
+  width: 100%;
+  margin-top: 50px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const ProfilePhoto = styled.img`
+  border-radius: 100%;
+  font-size: 2.25em;
+  height: 5em;
+  margin: 0 0 0.75em 0;
+`;
+
+export const EmailIcon = styled(Email)`
+  color: #50a8e6;
+  margin-right: 1em;
+`;
+
+export const GitHubIcon = styled(Github)`
+  color: #50a8e6;
+  margin-right: 1em;
+`;
+
+export const LinkedInIcon = styled(LinkedinSquare)`
+  color: #50a8e6;
 `;
