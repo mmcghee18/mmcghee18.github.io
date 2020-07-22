@@ -8,7 +8,7 @@ import frisbee from "../images/frisbee.png";
 
 const projects = [
   {
-    title: "It's LeviOsa, not LevioSA!",
+    title: '"It\'s LeviOsa, not LevioSA!"',
     description: "Visualizing every spell in the Harry Potter books.",
     tag: "code data-vis",
     link: "https://mmcghee18.github.io/harry-potter-spells/",
