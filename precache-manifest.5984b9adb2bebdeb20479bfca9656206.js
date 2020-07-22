@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f45258aaf910feb7d5618c55a43f2b1b",
+    "revision": "6b6cc528160b5667e715a571930efa60",
     "url": "/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.74876b47.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "938f300ee1744d4a0ba3",
-    "url": "/static/js/main.7c28d709.chunk.js"
+    "revision": "0bd1e83a65dbb9c3e04f",
+    "url": "/static/js/main.fedd8c91.chunk.js"
   },
   {
     "revision": "dd8147bbe7734801bdde",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/laptops.cd0f494e.jpg"
   },
   {
-    "revision": "18b6af546719c34382ef09f5806f0034",
-    "url": "/static/media/les-mis.18b6af54.png"
+    "revision": "e6019d9ccff22ae36d2f8e7813a3ea47",
+    "url": "/static/media/les-mis-colored.e6019d9c.png"
   },
   {
     "revision": "1aa388ae0a392ad078bc0c9e69070c1c",
