@@ -1,5 +1,5 @@
 import React from "react";
-import lesMis from "../images/les-mis.png";
+import lesMis from "../images/les-mis-colored.png";
 import threeUnicorns from "../images/studio.jpeg";
 import hpGraph from "../images/hp-graph.png";
 import resource from "../images/single-click-sourcing.gif";
