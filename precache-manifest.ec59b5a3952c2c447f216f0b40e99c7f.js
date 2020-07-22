@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e20cdb03be7cd38881fb218af820f47c",
+    "revision": "9d82bdbee0dc8afe8223b8679e085f3e",
     "url": "/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.74876b47.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bacd8721a318cfa0b600",
-    "url": "/static/js/main.18708be0.chunk.js"
+    "revision": "68f7a59020985364b1e5",
+    "url": "/static/js/main.3220bb1b.chunk.js"
   },
   {
     "revision": "dd8147bbe7734801bdde",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/les-mis-colored.d3383c92.png"
   },
   {
-    "revision": "1aa388ae0a392ad078bc0c9e69070c1c",
-    "url": "/static/media/single-click-sourcing.1aa388ae.gif"
+    "revision": "6f2cb4495666067602be8ded46d26f57",
+    "url": "/static/media/resource.6f2cb449.gif"
   },
   {
     "revision": "fd55262c373fb2be62a97c396131cc55",
