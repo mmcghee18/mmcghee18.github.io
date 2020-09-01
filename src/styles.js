@@ -3,6 +3,20 @@ import { animated } from "react-spring";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos";
 import { Github } from "@styled-icons/boxicons-logos";
 import { Email } from "@styled-icons/material-outlined";
+import { MenuOutlined } from "@ant-design/icons";
+
+const maxSizes = {
+  mobile: "480px",
+  tablet: "768px",
+  laptop: "1024px",
+  desktop: "2560px",
+};
+const devices = {
+  mobile: `(max-width: ${maxSizes.mobile})`,
+  tablet: `(max-width: ${maxSizes.tablet})`,
+  laptop: `(max-width: ${maxSizes.laptop})`,
+  desktop: `(max-width: ${maxSizes.desktop})`,
+};
 
 // App
 export const GlobalStyle = createGlobalStyle`
@@ -28,6 +42,11 @@ export const GlobalStyle = createGlobalStyle`
 export const AppWrapper = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media ${devices.tablet} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 // Projects
@@ -35,12 +54,24 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export const AllProjects = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
 `;
 
 // Project
 export const ProjectWrapper = styled.div`
   width: 45%;
   margin: 10px;
+
+  @media ${devices.mobile} {
+    width: 80%;
+    margin: 20px;
+  }
 `;
 
 export const ProjectLink = styled.a`
@@ -75,6 +106,43 @@ export const ImageWrapper = styled.div`
   cursor: pointer;
 `;
 
+// TopBar
+export const Menu = styled(MenuOutlined)`
+  display: none;
+
+  @media ${devices.tablet} {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+`;
+
+export const MichelleTitle = styled.h1`
+  font-size: 1.5em;
+  margin: 0;
+`;
+
+export const TopBarWrapper = styled.div`
+  display: none;
+
+  @media ${devices.tablet} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background: #e3e9ef;
+    width: 100%;
+    padding: 15px;
+  }
+`;
+
 // Sidebar
 export const SidebarWrapper = styled.div`
   position: sticky;
@@ -88,6 +156,10 @@ export const SidebarWrapper = styled.div`
   flex-direction: column;
   flex-shrink: 0;
   width: 150px;
+
+  @media ${devices.tablet} {
+    display: none;
+  }
 `;
 
 export const ProjectTypes = styled.div`
@@ -105,13 +177,27 @@ export const Link = styled.a`
 
 // About
 export const AboutWrapper = styled.div`
-  width: 100%;
+  width: 80%;
   margin-top: 50px;
-  margin-right: 100px;
+  margin-right: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${devices.tablet} {
+    margin-right: 0px;
+  }
 `;
+
+export const AboutDescription = styled.div`
+  width: 500px;
+  max-width: 100%;
+
+  @media ${devices.tablet} {
+    text-align: center;
+  }
+`;
+
 export const ProfilePhoto = styled.img`
   border-radius: 100%;
   font-size: 2.25em;

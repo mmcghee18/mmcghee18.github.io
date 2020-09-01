@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectsWrapper } from "../styles.js";
+import { ProjectsWrapper, AllProjects } from "../styles.js";
 import Project from "./Project.jsx";
 import projects from "./projects.js";
 
@@ -21,7 +21,7 @@ const Projects = ({ projectType }) => {
     );
 
     return (
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <AllProjects>
         <h2 style={{ marginBottom: 0 }}>
           <strong>Data Vis</strong>
         </h2>
@@ -58,22 +58,24 @@ const Projects = ({ projectType }) => {
             }
           })}
         </ProjectsWrapper>
-      </div>
+      </AllProjects>
     );
   }
 
   return (
-    <ProjectsWrapper>
-      {projectsToDisplay.map(({ title, description, image, tag, link }) => (
-        <Project
-          title={title}
-          description={description}
-          image={image}
-          tag={tag}
-          link={link}
-        />
-      ))}
-    </ProjectsWrapper>
+    <AllProjects>
+      <ProjectsWrapper>
+        {projectsToDisplay.map(({ title, description, image, tag, link }) => (
+          <Project
+            title={title}
+            description={description}
+            image={image}
+            tag={tag}
+            link={link}
+          />
+        ))}
+      </ProjectsWrapper>
+    </AllProjects>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AboutWrapper,
+  AboutDescription,
   ProfilePhoto,
   EmailIcon,
   LinkedInIcon,
@@ -12,7 +13,7 @@ const About = () => {
   return (
     <AboutWrapper>
       <ProfilePhoto src={photo} />
-      <div style={{ width: "500px" }}>
+      <AboutDescription>
         <p>Hi! I'm Michelle.</p>
         <p>
           <strong>I'm a fullstack developer who loves to tell stories.</strong>{" "}
@@ -28,7 +29,7 @@ const About = () => {
           or drinking boba.
         </p>
         <p>Wanna get in touch? Email me at michmac202@gmail.com.</p>
-      </div>
+      </AboutDescription>
       <div style={{ marginTop: "2em" }}>
         <a
           target="_blank"
