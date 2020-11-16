@@ -21,7 +21,7 @@ const Project = ({ title, description, image = laptops, link = "#" }) => {
 
   return (
     <ProjectWrapper>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <ImageWrapper>
         <a href={link} target="_blank">
           <Image src={image} />

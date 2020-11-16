@@ -21,12 +21,14 @@ const About = () => {
         </p>
         <p>
           When I'm not building stuff, you can find me{" "}
-          <a href="https://www.storycraftclass.com/">
+          <a href="https://www.storycraftclass.com/" target="_blank">
             teaching live storytelling workshops
           </a>
           ,{" "}
-          <a href="https://youtu.be/66lARLKyYjU?t=50">chasing plastic discs</a>,
-          or drinking boba.
+          <a href="https://youtu.be/66lARLKyYjU?t=50" target="_blank">
+            chasing plastic discs
+          </a>
+          , or drinking boba.
         </p>
         <p>Wanna get in touch? Email me at michmac202@gmail.com.</p>
       </AboutDescription>

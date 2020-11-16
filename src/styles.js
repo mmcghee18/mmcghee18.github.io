@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'National 2 Web', sans-serif;
     background-color: white;
     color: black;
+    font-size: 18px;
   }
 
   strong {
@@ -61,6 +62,7 @@ export const AllProjects = styled.div`
   display: flex;
   flex-direction: column;
   margin: 30px;
+  margin-top: 50px;
 `;
 
 // Project
@@ -83,6 +85,7 @@ export const ProjectLink = styled.a`
 export const Description = styled.div`
   color: grey;
   margin-top: 1em;
+  font-size: 16px;
 `;
 
 export const FlippingImage = styled(animated.img)`
@@ -124,6 +127,7 @@ export const Menu = styled(MenuOutlined)`
 export const MichelleTitle = styled.h1`
   font-size: 1.5em;
   margin: 0;
+  color: white;
 `;
 
 export const TopBarWrapper = styled.div`
@@ -137,7 +141,8 @@ export const TopBarWrapper = styled.div`
     position: sticky;
     top: 0px;
     z-index: 1000;
-    background: #e3e9ef;
+    background: #3c4146;
+    color: white;
     width: 100%;
     padding: 15px;
   }
@@ -149,13 +154,11 @@ export const SidebarWrapper = styled.div`
   top: 50px;
   margin-left: 50px;
   margin-top: 50px;
-  margin-right: 50px;
-  width: 600px;
   height: 100%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  width: 150px;
+  width: 175px;
 
   @media ${devices.tablet} {
     display: none;
@@ -163,16 +166,23 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const ProjectTypes = styled.div`
+  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 `;
 
 export const Link = styled.a`
-  font-size: 0.85em;
-  margin-bottom: 5px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
   text-decoration: none;
   color: black;
+  font-family: ${(props) =>
+    props.selected ? "'National 2 Web Bold'" : "inherit"};
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
 `;
 
 // About

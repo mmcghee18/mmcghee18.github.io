@@ -13,7 +13,7 @@ function App() {
     <AppWrapper>
       <GlobalStyle />
       <GlobalFonts />
-      <Sidebar setProjectType={setProjectType} />
+      <Sidebar setProjectType={setProjectType} projectType={projectType} />
       <TopBar setProjectType={setProjectType} />
 
       {projectType === "about" ? (

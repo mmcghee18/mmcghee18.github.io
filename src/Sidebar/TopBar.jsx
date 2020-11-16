@@ -37,11 +37,20 @@ const TopBar = ({ setProjectType }) => {
             <Link
               href="#"
               onClick={() => {
-                setProjectType("code");
+                setProjectType("data-vis");
                 setOpenMenu(false);
               }}
             >
-              👩🏽‍💻 Code
+              📊 Data Visualization
+            </Link>
+            <Link
+              href="#"
+              onClick={() => {
+                setProjectType("eng");
+                setOpenMenu(false);
+              }}
+            >
+              👩🏽‍💻 Software Engineering
             </Link>
             <Link
               href="#"
