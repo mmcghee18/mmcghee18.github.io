@@ -11,9 +11,9 @@ const projects = [
   {
     title: "Who's in the crossword?",
     description:
-      "A visual essay for The Pudding looking at inclusivity and representation in crossword puzzles. Will be published 11/17!",
+      "A visual essay for The Pudding looking at inclusivity and representation in crossword puzzles.",
     tag: "data-vis",
-    link: "https://pudding.cool", //"https://pudding.cool/2020/11/crossword/",
+    link: "https://pudding.cool/2020/11/crossword/",
     image: pudding,
   },
   {
