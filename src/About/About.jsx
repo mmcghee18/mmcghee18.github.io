@@ -16,8 +16,8 @@ const About = () => {
       <AboutDescription>
         <p>Hi! I'm Michelle.</p>
         <p>
-          <strong>I'm a fullstack developer who loves to tell stories.</strong>{" "}
-          I love to combine these two things whenever possible.
+          I'm a fullstack developer who loves to tell stories.{" "}
+          I currently work as a <strong>visual journalist</strong> at <a href="https://www.axios.com/authors/mmcghee/" target="_blank">Axios.</a>
         </p>
         <p>
           When I'm not building stuff, you can find me{" "}
