@@ -1,5 +1,7 @@
 # Porfolio site
 
+https://mmcghee18.github.io/
+
 To update:
 
 - update `data.json`
