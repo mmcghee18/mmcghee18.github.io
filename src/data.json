@@ -1,0 +1,70 @@
+{
+    "projects": [
+        {
+            "id": "crosswords",
+            "title": "Who’s in the Crossword?",
+            "description": "A visual essay for The Pudding looking at inclusivity and representation in crossword puzzles.",
+            "url": "https://pudding.cool/2020/11/crossword",
+            "date": "10-2020",
+            "pinned": true
+        },
+        {
+            "id": "harry-potter",
+            "title": "'It's LeviOsa, not LevioSA!'",
+            "description": "Visualizing every spell in the Harry Potter books.",
+            "url": "https://mmcghee18.github.io/harry-potter-spells/",
+            "date": "06-2020"
+        },
+        {
+            "id": "pharmacies",
+            "title": "People of color disadvantaged in coronavirus vaccine effort",
+            "url": "https://www.axios.com/communities-of-color-coronavirus-vaccines-disparities-be9477fa-67a8-4316-afa9-b6b40f6b5cb5.html",
+            "date": "01-22-2021"
+        },
+        {
+            "id": "covid-ratios",
+            "title": "Where the pandemic has been deadliest",
+            "url": "https://www.axios.com/coronavirus-pandemic-deaths-new-jersey-new-york-03f36151-521a-4d39-bfce-d1f1201adce9.html",
+            "date": "02-09-2021"
+        },
+        {
+            "id": "axis-broke",
+            "gif": true,
+            "title": "2020: The year the y-axis broke",
+            "url": "https://www.axios.com/pandemic-broke-data-journalism-graphics-080f6fc2-4b04-47ad-bc3b-5b199c8ea562.html?deepdive=1",
+            "date": "03-13-2021",
+            "pinned": true
+        },
+        {
+            "id": "cabinet-income",
+            "title": "Biden administration picks, by income",
+            "url": "https://www.axios.com/biden-cabinet-income-c432bfc3-3929-42bc-bc93-07faf5bc8cab.html",
+            "date": "01-31-2021"
+        },
+        {
+            "id": "us-vaccines",
+            "title": "America’s extra vaccine doses",
+            "url": "https://www.axios.com/extra-vaccine-doses-america-a7b5c9ee-7ab2-4cce-b220-54899f824ba9.html",
+            "date": "02-13-2021"
+        },
+        {
+            "id": "hospitalizations-by-age",
+            "title": "COVID-19 associated hospitalizations by age",
+            "url": "https://www.axios.com/older-adult-hospitalization-covid-vaccine-3c247a3e-e284-474c-a8b1-e8a8df86bbe2.html",
+            "date": "03-24-2021"
+        },
+        {
+            "id": "police-killings",
+            "title": "How the 1,127 police killings in 2020 began",
+            "url": "https://www.axios.com/police-killings-2020-non-violent-incidents-dd3035a9-3182-43b9-9742-1a5f8786ca6c.html",
+            "date": "04-12-2021",
+            "pinned": true
+        },
+        {
+            "id": "voting-bills",
+            "title": "Bills introduced restricting or expanding voting access by state",
+            "url": "https://www.axios.com/state-voting-rights-restrictive-bills-314b5337-0147-4ddb-8393-c5125e20595a.html",
+            "date": "04-23-2021"
+        }
+    ]
+  }
