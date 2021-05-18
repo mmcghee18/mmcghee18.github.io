@@ -32,8 +32,7 @@
             "gif": true,
             "title": "2020: The year the y-axis broke",
             "url": "https://www.axios.com/pandemic-broke-data-journalism-graphics-080f6fc2-4b04-47ad-bc3b-5b199c8ea562.html?deepdive=1",
-            "date": "03-13-2021",
-            "pinned": true
+            "date": "03-13-2021"
         },
         {
             "id": "cabinet-income",
@@ -65,6 +64,13 @@
             "title": "Bills introduced restricting or expanding voting access by state",
             "url": "https://www.axios.com/state-voting-rights-restrictive-bills-314b5337-0147-4ddb-8393-c5125e20595a.html",
             "date": "04-23-2021"
+        },
+        {
+            "id": "confederate-monuments",
+            "title": "Mapped: Confederate monuments over time",
+            "url": "https://www.axios.com/confederate-monuments-statues-map-removed-1e2c6b59-602c-407c-a0b5-cfbacd0d2877.html",
+            "date": "05-18-2021",
+            "pinned": true
         }
     ]
   }
