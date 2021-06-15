@@ -56,8 +56,7 @@
             "id": "police-killings",
             "title": "How the 1,127 police killings in 2020 began",
             "url": "https://www.axios.com/police-killings-2020-non-violent-incidents-dd3035a9-3182-43b9-9742-1a5f8786ca6c.html",
-            "date": "04-12-2021",
-            "pinned": true
+            "date": "04-12-2021"
         },
         {
             "id": "voting-bills",
@@ -68,8 +67,17 @@
         {
             "id": "confederate-monuments",
             "title": "Mapped: Confederate monuments over time",
+            "description": "Where confederate monuments went up and came down over time, using the Southern Poverty Law Center's database of confederate symbols.",
             "url": "https://www.axios.com/confederate-monuments-statues-map-removed-1e2c6b59-602c-407c-a0b5-cfbacd0d2877.html",
             "date": "05-18-2021",
+            "pinned": true
+        },
+        {
+            "id": "jhu",
+            "title": "How America’s top hospitals hound patients with predatory billing",
+            "description": "A full-page interactive essay for Axios about predatory billing practices in America's top hospitals.",
+            "url": "https://www.axios.com/hospital-billing",
+            "date": "06-14-2021",
             "pinned": true
         }
     ]

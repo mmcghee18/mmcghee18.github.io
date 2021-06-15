@@ -3,19 +3,30 @@
   import Project from "./Project.svelte";
   import data from "./data.json";
   import _ from "lodash";
+
+  const sortByDate = (list) => {
+    return _.orderBy(
+      list,
+      (d) =>
+        d.date.split("-").length === 2
+          ? new Date(`01-${d.date}`)
+          : new Date(d.date),
+      ["desc"]
+    );
+  };
 </script>
 
 <main>
   <Header />
   <div class="title">📌 Pinned projects</div>
   <div class="projects">
-    {#each data.projects.filter((d) => d.pinned) as d}
+    {#each sortByDate(data.projects.filter((d) => d.pinned)) as d}
       <Project {...d} />
     {/each}
   </div>
-  <div class="title">✨ Everything else</div>
+  <div class="title">✨ Other projects</div>
   <div class="projects">
-    {#each _.orderBy( data.projects.filter((d) => !d.pinned), (d) => (d.date.split("-").length === 2 ? new Date(`01-${d.date}`) : new Date(d.date)), ["desc"] ) as d}
+    {#each sortByDate(data.projects.filter((d) => !d.pinned)) as d}
       <Project {...d} />
     {/each}
   </div>
