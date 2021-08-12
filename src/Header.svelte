@@ -3,21 +3,17 @@
   <ul class="bio">
     <h1>Hi! I'm Michelle.</h1>
     <li>
-      I'm a <strong>developer</strong> and a <strong>data journalist</strong>.
-      👩🏽‍💻📊
-    </li>
-    <li>
       I love making complex topics visual and understandable. These days, I tell
-      stories with data and code at <a
+      stories with data and code as a <strong>Journalist-Engineer</strong> at <a
         target="_blank"
-        href="https://www.axios.com/authors/mmcghee/">Axios.</a
+        href="https://pudding.cool/">The Pudding.</a
       >
     </li>
     <li style="font-size: 16px">
       Say hi at <a
         target="_blank"
         href="https://mail.google.com/mail/u/0/?fs=1&to=michmac202@gmail.com&tf=cm"
-        >michmac202@gmail.com</a
+        >michelle@pudding.cool</a
       >
       👋🏽
       <br />
@@ -68,6 +64,15 @@
     z-index: 0;
     position: relative;
   }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-right: 40px;
+  }
+
   @media (max-width: 990px) {
     img {
       height: 200px;
@@ -79,14 +84,9 @@
     img {
       display: none;
     }
-  }
-
-  .bio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin-right: 55px;
+    .bio {
+      margin-right: 0px;
+    }
   }
 
   a {
