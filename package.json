@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "gac": "^1.0.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "sirv-cli": "^1.0.12"
   }
 }
