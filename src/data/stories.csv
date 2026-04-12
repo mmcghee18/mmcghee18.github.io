@@ -1,0 +1,23 @@
+featured,id,date,publication,title,description,roles,link
+TRUE,crossword,11/2020,The Pudding,Who's in the Crossword?,"Crosswords are known for being too old, too white, and too male. I investigated whether the data backed that up.","data, code, story",https://pudding.cool/2020/11/crossword
+FALSE,lenna,10/2021,The Pudding,Can Data Die?,"Tracing one of the Internet's oldest images, that lives on without the subject's consent.",code,https://pudding.cool/2021/10/lenna
+TRUE,sesame,12/2021,The Pudding,Sesame Allergies,Investigating 200 cracker brands to learn about food allergies and labeling.,"data, design, code, story",https://pudding.cool/2021/12/sesame
+FALSE,plain,2/2022,The Pudding,Plain Language,What makes writing more readable? Experience it for yourself.,"design, code, editor",https://pudding.cool/2022/02/plain
+TRUE,cdmx,9/2022,The Pudding,The Sounds of CDMX,"Take an audio tour of Mexico City, seen through its street vendors.","design, code, editor",https://pudding.cool/2022/09/cdmx
+FALSE,words,9/2022,The Pudding,Words Against Strangers,Me and Russell's attempt to compete with Wordle.,"data, code",https://pudding.cool/games/words-against-strangers
+FALSE,mobility,11/2022,The Pudding,On Upward Mobility,How does where you grow up impact your economic opportunity?,editor,https://pudding.cool/2022/11/upward-mobility
+TRUE,emotion,12/2022,The Pudding,Emotion Wheel,"A journey of emotional awareness, where we uncover the power of naming and visualizing your feelings.","design, code, editor",https://pudding.cool/2022/12/emotion-wheel
+FALSE,skills,3/2023,Polygraph x LinkedIn,Skills-First Report,,"data, design, code",https://linkedin.github.io/skills-first-report/
+TRUE,wonky,6/2023,The Pudding,Wonky Rhythms,I break down J Dilla's signature off-beat timefeel.,everything,https://pudding.cool/2023/06/groove
+TRUE,genre,10/2023,The Pudding,Spotify Genres,"Spotify tracks over 6,000 genres—everything from ""rock"" to ""stomp-and-holler."" Here's why that's cool.","code, editor",https://pudding.cool/2023/10/genre
+TRUE,anthems,2/2024,The Pudding,National Anthem Divas,We listened to 138 National Anthem performances so you don't have to. Here are the biggest divas.,"data, code, story",https://pudding.cool/2024/02/anthems
+TRUE,ai,7/2024,The Pudding,AI Experiment,We had AI attempt to make a data-driven story like we do at The Pudding.,"design, code, story",https://pudding.cool/2024/07/ai
+FALSE,lineup,9/2024,The Pudding,Baseball Lineups,See how modern stats are reshaping baseball's batting lineups.,"design, code, editor",https://pudding.cool/2024/09/lineup
+TRUE,mazes,10/2024,The Pudding,Abortion Mazes,A maze for each state where the difficulty is calculated by the state's abortion policies.,"data, code",https://pudding.cool/2024/10/abortion-mazes
+FALSE,carnegie,2/2025,Polygraph x Carnegie,Carnegie Libraries,,"data, code",https://map.carnegielibraries.org/
+TRUE,housewives,3/2025,The Pudding,Real Housewives Apologies,What we can learn from watching reality stars apologize.,everything,https://pudding.cool/2025/03/housewives
+FALSE,bg,4/2025,Polygraph x Jigsaw x Innovation Engine,What Could Bowling Green Be?,,code,https://report.whatcouldbgbe.com/
+FALSE,animals,7/2025,The Pudding,Kids Book Animals,How and why do we gender animals in stories?,code,https://pudding.cool/2025/07/kids-books
+FALSE,annuities,8/2025,Polygraph x WSJ,Annuities Unwrapped,,code,https://partners.wsj.com/tiaa/annuities-unwrapped/planning-for-the-unpredictable/?gaa_at=eafs&gaa_n=AWEtsqeexQMjgjHWQ703eYu_vMBu_o2XqRMNbr51GL2GPL-yuCYrWhH0EI1ZAMvnT8w%3D&gaa_ts=69c16ff2&gaa_sig=T5TqiH42TTsLyjmiS5Hz6f_3J5DcymvXli07M7TcFqvJvt4EfNL0CUID-j5X-G5NiEj5czBQMutLxoU0yEYqQA%3D%3D
+TRUE,motifs,12/2025,The Pudding,Musical Motifs,Visualizing how musicals use motifs to tell stories.,everything,https://pudding.cool/2025/12/motifs
+TRUE,ivf,3/2026,The Pudding,Infertility Journey,"A personal, interactive journey about IVF, told from two perspectives.","code, editor",https://pudding.cool/2026/03/ivf
