@@ -47,15 +47,18 @@
 		<ul class="more-stories">
 			{#each moreStories as story}
 				{@const rolesCleaned = story.roles.split(",").map((r) => r.trim())}
+				{@const year = story.date.split("/")[1]}
 				<li>
 					<a href={story.link} target="_blank">{story.title}</a>
 
-					({story.publication})
+					({story.publication}, {year})
 
 					<div class="roles">
-						{#each rolesCleaned as role, index}
-							<Role {role} /> {index < rolesCleaned.length - 1 ? "/" : ""}
-						{/each}
+						<div class="roles">
+							{#each rolesCleaned as role, index}
+								<Role {role} /> {index < rolesCleaned.length - 1 ? "/" : ""}
+							{/each}
+						</div>
 					</div>
 				</li>
 			{/each}
@@ -65,7 +68,7 @@
 
 <style>
 	main {
-		padding: 5rem 2rem;
+		padding: 4rem 2rem;
 		font-family: var(--font-mono);
 		background: #fffcf6;
 	}
@@ -79,7 +82,8 @@
 		max-width: 660px;
 	}
 
-	section#work {
+	section#work,
+	section#more {
 		max-width: 1100px;
 	}
 
@@ -120,17 +124,23 @@
 		flex-wrap: wrap;
 	}
 
-	@media (max-width: 500px) {
+	@media (max-width: 600px) {
 		main {
-			padding: 2rem 2rem;
+			padding: 2rem;
 			font-size: var(--14px);
 		}
+
 		h1 {
 			font-size: var(--32px);
 		}
 
+		section {
+			margin: 3rem auto;
+		}
+
 		section#intro {
 			font-size: var(--16px);
+			margin-top: 1rem;
 		}
 
 		ul.more-stories {
@@ -140,6 +150,7 @@
 		ul.more-stories li {
 			display: flex;
 			flex-direction: column;
+			margin: 1rem 0;
 		}
 	}
 </style>

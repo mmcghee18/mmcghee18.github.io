@@ -1,9 +1,10 @@
 <script>
 	import Role from "$components/Role.svelte";
 
-	const { id, title, description, link, publication, roles } = $props();
+	const { id, title, description, link, publication, roles, date } = $props();
 
 	const rolesCleaned = roles.split(",").map((r) => r.trim());
+	const year = date.split("/")[1];
 </script>
 
 <li class="story">
@@ -21,7 +22,7 @@
 			</div>
 		</div>
 
-		<h3>{title}</h3>
+		<h3><span class="year">{year}</span> {title}</h3>
 
 		<div class="mobile-description">
 			<p class="description">{description || "tk description"}</p>
@@ -44,6 +45,13 @@
 		text-transform: uppercase;
 		line-height: 1.2;
 		margin: 1rem 0;
+	}
+
+	.year {
+		font-size: var(--12px);
+		color: var(--color-gray-500);
+		display: block;
+		margin-bottom: 4px;
 	}
 
 	.img-container {
